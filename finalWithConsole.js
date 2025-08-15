@@ -19,7 +19,7 @@ for (let fare of testFares) {
 
 
 
-
+/* ----------------------------------------------------------------- */
 
 
 
@@ -46,11 +46,12 @@ string.forEach(item => {
 
 
 
+/* ----------------------------------------------------------------- */
 
 
 
 
-function bestTeam(player1, player2) {
+function bestTeam( player1, player2 ) {
 
       if (typeof player1 !== "object" || typeof player2 !== "object" || player1 === null || player2 === null) {
             return "Invalid";
@@ -84,6 +85,7 @@ console.log(bestTeam({ name: "Germany", foul: 10, cardY: 1, cardR: 1 },
       "France")); 
 
 
+/* ----------------------------------------------------------------- */
 
 
       
@@ -116,6 +118,7 @@ console.log(isSame([2, 5, 6], 256));
 console.log(isSame({ data: [2, 5, 6] }, [2, 5, 6]));
 
 
+/* ----------------------------------------------------------------- */
 
 
 function resultReport(marks) {

@@ -1,5 +1,5 @@
 
-function totalFine(fare) {
+function totalFine( fare ) {
     if (typeof fare !== "number" || fare <= 0) {
         return "Invalid";
     }
@@ -12,24 +12,20 @@ function totalFine(fare) {
 }
 
 
-function onlyCharacter(str) {
+/* ----------------------------------------------------------------- */
+
+
+function onlyCharacter( str ) {
       if (typeof str !== "string") {
             return "Invalid";
       }
       return str.replace(/\s+/g, "").toUpperCase();
 }
 
-let string = [
-      "  h e llo wor   ld",
-      "Cy   bar- At  tac k  ",
-      " ha ck m e 1 @ru.c  n  ",
-      "Serv er : : Do wn",
-      ["hack", "me"],
-      true
-];
+/* ----------------------------------------------------------------- */
 
 
-function bestTeam(player1, player2) {
+function bestTeam( player1, player2 ) {
 
       if (typeof player1 !== "object" || typeof player2 !== "object" || player1 === null || player2 === null) {
             return "Invalid";
@@ -50,6 +46,8 @@ function bestTeam(player1, player2) {
 
 }
       
+/* ----------------------------------------------------------------- */
+
 
 function isSame(arr1, arr2) {
       if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
@@ -69,8 +67,10 @@ function isSame(arr1, arr2) {
 
 }
 
+/* ----------------------------------------------------------------- */
 
-function resultReport(marks) {
+
+function resultReport( marks ) {
       if (!Array.isArray(marks)) {
             return "Invalid";
 
