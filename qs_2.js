@@ -1,10 +1,10 @@
 
 
-function  onlyCharacter(str) {
-      if(typeof str !== "string"){
+function onlyCharacter(str) {
+      if (typeof str !== "string") {
             return "Invalid";
       }
-      return str.replace(/\s+/g, "") .toUpperCase();
+      return str.replace(/\s+/g, "").toUpperCase();
 }
 
 let string = [
@@ -14,7 +14,7 @@ let string = [
       "Serv er : : Do wn",
       ["hack", "me"],
       true
-];      
-string.forEach(item =>{
+];
+string.forEach(item => {
       console.log(onlyCharacter(item));
 });
