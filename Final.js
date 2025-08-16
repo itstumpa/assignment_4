@@ -19,7 +19,7 @@ function onlyCharacter( str ) {
       if (typeof str !== "string") {
             return "Invalid";
       }
-      return str.replace(/\s+/g, "").toUpperCase();
+       return str.split(" ").join("").toUpperCase();
 }
 
 /* ----------------------------------------------------------------- */
@@ -93,7 +93,7 @@ function resultReport( marks ) {
 
       let finalScore = Math.round(total / marks.length);
       return {
-            finalScore: finalScore,
+            finalScore:finalScore,
             pass: pass,
             fail: fail
       };
